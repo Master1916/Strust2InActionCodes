@@ -26,6 +26,7 @@ public class ImageUpload extends ActionSupport {
 		try {
 			getPortfolioService().addImage(getPic(), getPicFileName(),
 					fileSystemPath);
+			 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

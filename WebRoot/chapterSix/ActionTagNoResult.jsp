@@ -12,7 +12,8 @@
 		<h4>This line is before the ActionTag invokes the secondary action.</h4>
 		<s:action name="TargetAction"/>
 		<h4>Secondary action has fired now.  So, we can access data stored by that action.</h4>
-		<h5>The request attribute set by the secondary action is:</h5> <pre> <s:property value="#request.dataFromSecondAction"/></pre>
+		<h5>The request attribute set by the secondary action is:</h5> <pre> 
+		<s:property value="#request.dataFromSecondAction"/></pre>
 		<hr/>
 	</body>
 	

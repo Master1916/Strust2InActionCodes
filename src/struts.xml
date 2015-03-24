@@ -11,6 +11,7 @@
    			on error pages as well as reloading of various resources with each request.
    --> 
    <constant name="struts.devMode" value="true" />
+    
  		<!-- 
 			You can define packages directly in this file, but its probably best
 		   	to modularize the configuration files with separate xml files for each

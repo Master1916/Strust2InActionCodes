@@ -13,7 +13,6 @@
 		<s:else>This user is just right</s:else>	
 		
 		</body>
-	
 </html>
 
 

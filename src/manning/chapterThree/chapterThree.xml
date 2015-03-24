@@ -69,6 +69,7 @@
 			<result name="input">
 				/chapterThree/ImageUploadForm.jsp
 			</result>
+			 
 		</action>
 
     <!--  Just a stub at this point.  It's easy and helpful to stub out your pages and actions

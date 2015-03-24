@@ -11,6 +11,7 @@
 		<hr/>
 		<h4>This line is from the ActionTag action's result.</h4>
 		<s:action name="TargetAction" executeResult="true"/>
+		<s:include value="/index.jsp"></s:include>
 		<hr/>
 	</body>
 	

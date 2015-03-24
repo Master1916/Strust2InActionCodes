@@ -6,6 +6,8 @@ import java.io.IOException;
 import manning.chapterThree.utils.PortfolioService;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.Preparable;
 
 /*
  * This action uploads an image file using the default fileUpload 
@@ -14,10 +16,11 @@ import com.opensymphony.xwork2.ActionSupport;
  * properties to receive the File and meta-data from the interceptor.
  */
 
-public class ImageUpload extends ActionSupport {
+public class ImageUpload extends ActionSupport implements Preparable  {
+	
 
 	public String execute() {
-
+		 
 		/*
 		 * Add the image to the portfolio.
 		 */
@@ -78,6 +81,20 @@ public class ImageUpload extends ActionSupport {
 
 		return new PortfolioService();
 
+	}
+	public void first(){
+		System.out.println("f");
+	}
+	public void prepareDoFirst(){
+		System.out.println("PrepareDoFirst()");
+	}
+
+	
+	
+	@Override
+	public void prepare() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("prepare()");
 	}
 
 }
